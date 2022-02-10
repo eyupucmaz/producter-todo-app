@@ -20,8 +20,10 @@ const TodoForm = ({ todos, setTodos }) => {
 	}, [text]);
 
 	const handleClick = () => {
-		setTodos([...todos, todo]);
-		setText("");
+		if (text.length > 0) {
+			setTodos([...todos, todo]);
+			setText("");
+		}
 	};
 	const handleKeyPress = (e) => {
 		if (e.key === "Enter") {
@@ -41,7 +43,6 @@ const TodoForm = ({ todos, setTodos }) => {
 								className={styles.form__input}
 								onChange={handleChange}
 								value={text}
-								required
 								onKeyPress={handleKeyPress}
 							/>
 							<button
