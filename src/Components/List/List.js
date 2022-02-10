@@ -5,7 +5,6 @@ import styles from "./List.module.css";
 
 const List = ({ todos, setTodos }) => {
 	const handleDelete = () => {
-		console.log("cliked");
 		setTodos(todos.filter((todo) => todo.isChecked !== true));
 	};
 
