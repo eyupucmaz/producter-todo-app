@@ -1,0 +1,30 @@
+.item {
+	width: 100%;
+	margin-bottom: 0.5rem;
+	padding: 1rem 0.5rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border-bottom: 1px solid #2d70fd;
+}
+
+.strike {
+	text-decoration: line-through;
+	font-size: 1.6rem;
+}
+
+.item__text {
+	font-size: 1.6rem;
+}
+
+.item__checkbox {
+  cursor: pointer;
+}
+
+.item__checkbox svg{
+  color: #2d70fd;
+}
+
+.item__checkbox svg:hover{
+  color: #2d6ffdcb;
+}
